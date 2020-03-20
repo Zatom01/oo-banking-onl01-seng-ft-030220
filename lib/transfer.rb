@@ -17,7 +17,10 @@ class Transfer
     account1=BankAccount.new
     account2=BankAccount.new 
     
-    if account1.isvalid?
+    if account1.valid? && account.valid?
+      Transfer(account1,account2,amount)
+    else 
+      
     
    
       
