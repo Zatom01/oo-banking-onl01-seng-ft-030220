@@ -19,7 +19,8 @@ class Transfer
     
     if account1.valid? && account.valid?
       Transfer(account1,account2,amount)
-    else 
+    elsif
+      if account1.balance
       
     
    
