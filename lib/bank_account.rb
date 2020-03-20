@@ -11,6 +11,22 @@ class BankAccount
   end 
   
   
+  def deposit(money)
+    @balance+money
+  end 
+  
+  def display_balance
+    puts "#{@balance}"
+  end 
+  
+  def valid?
+    self.balance >0 && self.status=="open"
+  end 
+  
+  def close_account
+    
+  end 
+  
   
 
 end
