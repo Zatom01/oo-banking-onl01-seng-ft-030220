@@ -14,19 +14,8 @@ class Transfer
   end 
   
   def execute_transaction
-    account1=BankAccount.new
-    account2=BankAccount.new 
     
-    if account1.valid? && account.valid?
-      Transfer(account1,account2,amount)
-      
-    else
-      
-      if account1.balance < amount
-      self.status="rejected"
-        return "Transaction rejected. Please check your account balance."
-      end 
-    end 
+    
   end 
       
         
