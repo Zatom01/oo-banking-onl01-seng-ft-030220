@@ -17,6 +17,8 @@ class Transfer
     account1=BankAccount.new
     account2=BankAccount.new 
     
+    if account1.isvalid?
+    
    
       
       
