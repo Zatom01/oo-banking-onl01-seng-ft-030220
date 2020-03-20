@@ -12,11 +12,11 @@ class BankAccount
   
   
   def deposit(money)
-    @balance+money
+    @balance+ money.to_i
   end 
   
   def display_balance
-    puts "Your balance is $#{self.balance}."
+    return "Your balance is $#{@balance}."
   end 
   
   def valid?
