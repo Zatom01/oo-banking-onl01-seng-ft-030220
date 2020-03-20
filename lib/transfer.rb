@@ -1,6 +1,6 @@
 class Transfer
   
-  attr_accessor :sender, :receiver, :status, :amount
+  attr_accessor :sender, :receiver, :status, :amount,:balance
   
   def initialize(sender,receiver,amount)
     @sender=sender
@@ -20,7 +20,8 @@ class Transfer
     if account1.valid? && account.valid?
       Transfer(account1,account2,amount)
     elsif
-      if account1.balance
+      if account1.balance < amount
+        
       
     
    
