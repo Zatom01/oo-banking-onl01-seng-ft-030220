@@ -19,12 +19,15 @@ class Transfer
     
     if account1.valid? && account.valid?
       Transfer(account1,account2,amount)
-    elsif
+      
+    else
+      
       if account1.balance < amount
-        self.status="rejected"
+      self.status="rejected"
         return "Transaction rejected. Please check your account balance."
       end 
-    else
+    end 
+  end 
       
         
       
