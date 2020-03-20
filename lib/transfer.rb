@@ -36,6 +36,7 @@ class Transfer
       @receiver.balance-=@@transferred[-1]
       @sender.balance +=@@transferred[-1]
       @status="reversed"
+    end 
     
   end 
   
