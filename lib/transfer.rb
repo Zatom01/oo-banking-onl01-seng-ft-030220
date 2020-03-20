@@ -21,7 +21,9 @@ class Transfer
       Transfer(account1,account2,amount)
     elsif
       if account1.balance < amount
+        self.status=""
         return "Transaction rejected. Please check your account balance."
+        
       
       
     
